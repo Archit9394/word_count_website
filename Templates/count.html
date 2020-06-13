@@ -1,0 +1,10 @@
+<h1>Count page</h1>
+<h2> Entered Text</h2>
+{{fulltext}}
+<h3>There are {{number}} words in the text</h3>
+{%for word, counttotal in sorted_words %}
+{{word}} -
+{{counttotal}}
+<br />
+{% endfor %}
+<!-- <p>{{sorted_words}}</p> -->
